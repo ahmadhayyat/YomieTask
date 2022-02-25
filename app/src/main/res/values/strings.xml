@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">YomieTask</string>
+    <string name="url_1">https://flutter.dev/</string>
+    <string name="url_2">https://kotlinlang.org/</string>
+</resources>
