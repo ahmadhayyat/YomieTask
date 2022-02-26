@@ -85,7 +85,7 @@ class MainActivity : FragmentActivity() {
     }
 
     private fun startLoop() {
-        timer = object : CountDownTimer(10000, 1000) {
+        timer = object : CountDownTimer(TOTAL_TIME, TIME_INTERAL) {
             override fun onTick(millisUntilFinished: Long) {
                 sliderPb.progress = sliderPb.progress - 10
                 Log.i("TIMER", "$millisUntilFinished")
@@ -116,4 +116,8 @@ class MainActivity : FragmentActivity() {
         }
     }
 
+    companion object {
+        val TOTAL_TIME: Long = 10000
+        val TIME_INTERAL: Long = 1000
+    }
 }
